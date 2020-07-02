@@ -126,15 +126,15 @@ count1      #처음부분 외엔 숫자 넣을 수 있음
 
 |연산 기호|한글 결과|영문 결과|
 |:---:|:---|:---|
-|x + y|x **더하기** y|**sum of** x and y|
-|x - y|x **빼기** y|**difference of** x and y|
-|x * y|x **곱하기** y|**product of** x and y|
-|x / y|x **나누기** y|**quotient of** x and y|
-|x // y|x 를 y로 **나눈 몫**|**floored quotient of** x and y|
-|x % y|x를 y로 **나눈 나머지**|**remainder of** x and y|
-|-x|x 의 부호 변경|x negated|
-|+x|x 변동 없음|x unchanged|
-|x ** y|x 의 y 제곱|x to the power y|
+|x __+__ y|x **더하기** y|**sum of** x and y|
+|x __-__ y|x **빼기** y|**difference of** x and y|
+|x __*__ y|x **곱하기** y|**product of** x and y|
+|x __/__ y|x **나누기** y|**quotient of** x and y|
+|x __//__ y|x 를 y로 **나눈 몫**|**floored quotient of** x and y|
+|x __%__ y|x를 y로 **나눈 나머지**|**remainder of** x and y|
+|__-x__|x 의 **부호 변경**|x **negated**|
+|__+__x|x **변동 없음**|x **unchanged**|
+|x __**__ y|x 의 y **제곱**|x to **the power* y|
 
 
 
@@ -183,7 +183,8 @@ python 으로 산술 예제 :
 >>> # 그 외에도 /=, //=, %=, **= 등이 있다.
 ~~~
 
-### - 문자열 자료형
+
+### - 문자열 
  - 문자 자료형 : 알파벳, 한글 등의 문제, 0~9 숫자, 기호
  - 문자열 : 문자들의 집합, 문자들의 연속 (단어 또는 문장)
 #### - 문자열 정의 방법   
@@ -242,3 +243,54 @@ hello my name is "python"
 >>> str_data[-4]
 'r'
 ~~~
+
+
+### 논리형
+- 데이터 중 참/거짓 통하여 표현할 수 있는 데이터형 (참 = True, 거짓 = False)
+- 참/거짓은 1과 0으로 표현되며 1일때 참, 0일때 거짓이다.
+~~~python
+>>> int(True)
+1
+>>> int(False)
+0
+~~~
+#### 비교 연산
+~~~python
+>>> 2 < 5
+True
+>>> 3 > 8
+False
+>> 2 == 7
+False
+>> 2 != 7
+True
+~~~
+
+
+|비교 연산자|뜻|
+|:---|:---|
+|<|작은|
+|<=|작거나 같은|
+|>|큰|
+|>=|크거나 같은|
+|==|같은|
+|!=|같지 않은|
+|is|같은 객체인|
+|is not|같은 객체가 아닌|
+
+#### 논리 연산
+
+~~~python
+>>> 2 > 5 or 4 > 1   #거짓 또는 참
+True
+>>> 2 > 5 and 4 > 1  #거짓 그리고 참
+False
+>>> not 2 > 4        # 거짓의 반대
+True
+~~~
+
+|논리 연산자|결과|참고 사항|
+|:---|:---|:---|
+|x or y|||
+|x and y|||
+|not x|||
