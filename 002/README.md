@@ -121,6 +121,24 @@ count1      #처음부분 외엔 숫자 넣을 수 있음
 ~~~
 #### 산술 연산자
 - 수를 연산하는데 쓰인다.
+
+
+
+|연산 기호|한글 결과|영문 결과|
+|:---:|:---|:---|
+|x + y|x **더하기** y|**sum of** x and y|
+|x - y|x **빼기** y|**difference of** x and y|
+|x * y|x **곱하기** y|**product of** x and y|
+|x / y|x **나누기** y|**quotient of** x and y|
+|x // y|x 를 y로 **나눈 몫**|**floored quotient of** x and y|
+|x % y|x를 y로 **나눈 나머지**|**remainder of** x and y|
+|-x|x 의 부호 변경|x negated|
+|+x|x 변동 없음|x unchanged|
+|x ** y|x 의 y 제곱|x to the power y|
+
+
+
+python 으로 산술 예제 :   
 ~~~python
 >>> 9+3 #더하기
 12
