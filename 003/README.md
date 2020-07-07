@@ -52,3 +52,20 @@ dict
 ~~~
 
 ## 3.4. 튜플
+~~~python
+>>> day_2 = ('Sun', 'Mon', 'Tue', 'Wed', 'Tur', 'Fri', 'Sat')
+>>> print(day_2)
+('Sun', 'Mon', 'Tue', 'Wed', 'Tur', 'Fri', 'Sat')
+>>> type(day_2)
+tuple
+~~~
+## 3.5. 셋 (집합)
+
+~~~python
+>>> day_3 = {'Sun', 'Mon', 'Tue', 'Wed', 'Tur', 'Fri', 'Sat'}
+>>> print(day_3)
+{'Sun', 'Mon', 'Tue', 'Wed', 'Tur', 'Fri', 'Sat'}
+>>> type(day_3)
+set
+~~~
+
