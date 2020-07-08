@@ -38,6 +38,10 @@
 요일:
 ~~~python
 >>> day = ['Sun', 'Mon','Tue','Wed','Tur','Fri','Sat']
+>>> print(day)
+['Sun', 'Mon','Tue','Wed','Tur','Fri','Sat']
+>>> type(day)
+list
 ~~~
 
 ## 3.3. 딕셔너리
