@@ -16,7 +16,13 @@
 
 파이썬을 배워야하는 이유를 설명하기에 앞서, 코딩을 배워야 하는 이유와 장점에 대해 설명하겠다.
 
-### 코딩을 배워야 하는 이유
-~~~
+### 코딩을 배워야 하는 이유   
 
+Steve Jobs(스티브잡스) :
+~~~
+<English>
+"Everybody in this country should learn how to program a computer... because it teaches you how to think."   
+
+<Korean>
+"이 나라의 모든 사람들이 컴퓨터 프로그래밍을 배워야 하는 이유는 사고하는 법을 배워야 하기 때문이다"
 ~~~
