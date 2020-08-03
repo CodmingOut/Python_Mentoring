@@ -121,7 +121,7 @@ while 조건:
 
 while문의 `조건`이 참(True)일 때 까지만 `while문의 공간`에 있는 코드를 반복합니다.
 
-그러므로 `조건`에 True를 넣으면 무한대로 반복한다. 이 무한 반복도 나가는 방법이 있는데, 다음에 나온다.
+그러므로 `조건`에 True를 넣으면 무한대로 반복합니다. 이 무한 반복도 나가는 방법이 있는데, 다음에 이어집니다.
 
 <br>
 
@@ -138,6 +138,36 @@ while a < 5:
 <br>
 
 ### break
+
+break문은 반복문을 빠져나오는 역할을 합니다.
+
+일반적으로 조건문과 함께 씁니다. (조건문이 없으면 반복문으로서의 효력이 없어집니다.)
+
+조건문은 밑에서 나옵니다.
+
+<br>
+
+> 예시
+
+```python
+# 중복되지 않게 랜덤한 숫자 5개를 만들어내는 코드
+
+from random import Random # 랜덤한 숫자를 만들기 위해 random 모듈을 임포트합니다.
+
+random = Random() # 랜덤 객체를 생성합니다.
+random_nums = set() # 중복을 허용하지 않는 set으로 중복된 숫자가 나오지 않게 합니다.
+
+while True: # 무한 반복
+    random_val = random.randint(1, 10) # 1부터 10 중, 랜덤하게 하나의 숫자를 만듭니다.
+    random_nums.add(random_val) # set에 넣습니다.
+
+    if len(random_nums) >= 5: # 중복되지 않는 랜덤 숫자가 5개 이상이 되면,
+        break # 반복문을 빠져나갑니다.
+
+print(random_nums) # set을 출력합니다.
+```
+
+<br>
 
 ### continue
 
