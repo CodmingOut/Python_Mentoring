@@ -27,7 +27,7 @@ print(10)
 
 ```python
 for i in range(10):
-  print(i)
+  print(i+1)
 ```
 
 위처럼 반복문을 사용하면, 몇 번을 반복하던 상관없이 2줄을 사용하는 것을 볼 수 있다.
