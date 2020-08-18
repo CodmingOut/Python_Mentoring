@@ -105,3 +105,42 @@ def 함수명([매개변수1], [...]):
 그렇기 때문에 위와 같이 곧바로 변수에 대입하여 사용할 수 있다.
 
 <br>
+
+## 5.7. 예시
+
+```python
+def sum(a, b):
+    print("- 함수 시작 -")
+    result = a + b
+    print("- 함수 끝 -")
+    return result
+
+c = sum(1, 2)
+print(c)
+
+print(sum(3, 4))
+```
+
+```python
+def multiplicationTablePrint(val):
+    for i in range(1, 10):
+        print(val, '×', i, '=', val * i)
+
+def multiplicationTableList(val):
+    result_list = list()
+    for i in range(1, 10):
+        result_list.append(val * i)
+    return result_list
+
+multiplicationTablePrint(5)
+
+print(multiplicationTableList(7))
+```
+
+위의 코드들을 보며 결과가 어떨지 예상해보자.
+
+<br>
+
+## References
+
+http://tcpschool.com/python2018/python_function_function
