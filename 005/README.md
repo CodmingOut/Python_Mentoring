@@ -193,6 +193,160 @@ total(1) # 1 은 어디로 들어가야 하는가.
 
 <br>
 
+## 5.10. 가변 매개변수
+
+```python
+def 함수명(*매개변수):
+    # ...
+```
+
+함수를 호출할 때, 몇 개의 인자가 전달될지 미리 알 수 없다면, 호출할 때 매개변수의 개수를 정할 수 있도록 선언할 수 있다.
+
+위와 같이 매개변수명 앞에 별 기호를 추가하여 선언한다.
+
+이렇게 들어온 모든 인수는 튜플의 형태로 매개변수에 들어가게 된다.
+
+<br>
+
+```python
+def 함수명(**매개변수):
+    # ...
+```
+
+별 기호를 2개 붙여주면 딕셔너리의 형태로 가변 매개변수를 사용할 수 있다.
+
+<br>
+
+## 5.11. 여러 개의 반환값
+
+```python
+def arith(a, b):
+    add = a + b
+    sub = a - b
+    mul = a * b
+    div = a / b
+    return add, sub, mul, div
+
+a, s, m, d = arith(5, 7)
+print(a)
+print(s)
+print(m)
+print(d)
+```
+
+우리는 앞에서 결과를 반환할 때, 단 하나의 결과만을 반환했다.
+
+하지만 여러 개의 값을 반환할 수도 있는데, 위와 같이 `return`에서 여러 개의 변수를 콤마(',')로 구분하여 넣으면 된다.
+
+이를 '언패킹(Unpacking)'이라고 한다.
+
+<br>
+
+## 5.12. 리스트 언패킹, 튜플 언패킹
+
+```python
+def print_numbers(a, b, c):
+    print(a)
+    print(b)
+    print(c)
+
+print_numbers(10, 20, 30) # 일반적인 사용법
+
+param_list = [10, 20, 30]
+print_numbers(*param_list) # 리스트 언패킹
+
+param_tuple = (10, 20, 30) # 'param_tuple = 10, 20, 30' 도 가능
+print_numbers(*param_list) # 튜플 언패킹
+```
+
+리스트나 튜플의 값 순서대로 각 매개변수에 들어간다고 보면 된다.
+
+그러므로 매개변수의 개수와 리스트나 튜플의 값의 개수가 다를 경우, 오류가 발생한다.
+
+<br>
+
+## 5.13. 딕셔너리 언패킹
+
+```python
+def student_info(number, name, grade):
+    print('학번:', number)
+    print('이름:', name)
+    print('학년:', grade)
+
+student_dict = {'number': '10101', 'name' : '누구누구', 'grade' : '3'}
+student_info(**student_dict)
+```
+
+딕셔너리의 키 값과 같은 이름을 가진 매개변수에 값이 들어간다고 보면 된다.
+
+그러므로 매개변수의 개수와 딕셔너리의 키의 개수도 같아야하고, 매개변수의 이름과 키의 이름도 같아야 한다.
+
+<br>
+
+## 5.14. 람다
+
+```python
+def add(a, b):
+    return a + b
+
+print(add(1, 2))
+print((lambda a, b: a + b)(1, 2))
+```
+
+람다는 간단한 함수의 선언과 호출을 하나의 식으로 간략히 표현한 것이다.
+
+람다는 일반 함수와 달리 이름을 가지지 않고, 일반적으로 함수 자체를 인수로 전달받는 함수에서 자주 사용된다.
+
+파이썬에서는 lambda 키워드로 다음과 같이 람다를 정의한다.
+
+```python
+lambda 매개변수1, 매개변수2, ...: 매개변수를 이용한 표현식
+```
+
+람다는 일반적인 함수와 달리 선언한 그 때에만 사용할 수 있다.
+
+<br>
+
+## 5.15. 예시(2)
+
+```python
+person_list = []
+
+def register(name, age, gender = '기타', description = '없음', **features):
+    person_dict = {}
+    person_dict['name'] = name
+    if age is not int:
+        person_dict['age'] = int(age)
+    else:
+        person_dict['age'] = age
+    person_dict['description'] = description
+    person_dict['features'] = features
+    person_list.append(person_dict)
+
+def person_print(name, age, description, features):
+    print('name :', name)
+    print('age :', age)
+    print('description :', description)
+    for feature in features.items():
+        print(feature[0], ':', feature[1])
+
+register('동그라미', 17, '여자', '평범하다.', 성격 = '조용하다', 좋아하는것 = '초코')
+register('세모', 19, '남자', 성격 = '모르겠다', 좋아하는것 = '딱히 쓸말이 없다')
+register('네모', 18, description = '항상 보면 누워 있다.', 성격 = '잘 심심해 한다.', 싫어하는것 = '시끄러운 곳')
+
+for person in person_list:
+    person_print(**person)
+    print()
+```
+
+먼저 스스로 이해하려 노력하고, 모르는 것이 있을 경우 멘토에게 물어보자!
+
+<br>
+
 ## References
 
 http://tcpschool.com/python2018/python_function_function
+
+https://dojang.io/course/view.php?id=7
+
+https://www.tutorialspoint.com/python3/index.htm
