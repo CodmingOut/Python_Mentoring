@@ -266,7 +266,7 @@ for i in range(1, 11): # range를 1부터 11까지로 정해준다.
 
 for i in range(1, 11): # range를 1부터 11까지로 정해준다. 
     if i%2 == 0: # i를 2로 나누어 떨어지면(짝수이면)
-      continue # pass에 의해 다음 코드로 넘어간다
+      pass # pass에 의해 다음 코드로 넘어간다
     print(i) # i를 모두 출력하게 된다.
 ~~~
 
