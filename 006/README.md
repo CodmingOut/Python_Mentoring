@@ -62,3 +62,40 @@ class Dog:
 introduce와 bark 함수의 매개변수로 self가 들어간 것을 확인할 수 있는데, 파이썬의 클래스 함수에는 첫 번째 인자로 반드시 자기 자신이 들어간다.
 이는 파이썬 언어 구조의 문제이니 그냥 그런갑다 하고 넘어가자.
 
+이를 실행하면 다음과 같다.
+
+```python
+>>>dog=Dog()
+
+>>>dog.introduce()
+내 이름은 멍멍이
+
+>>>dog.bark()
+왈왈
+```
+
+Dog클래스에서 dog라는 객체(인스턴스)를 만들고 내장되어 있는 함수를 호출했더니 정상적으로 print문이 실행된 것을 확인할 수 있다.
+
+그런데 개 주인이 개를 여러마리 키우고 싶어졌다. 그리고 각 개들마다 서로 다른 이름을 붙이고 싶어한다.
+그래서 클래스를 다음과 같이 수정하였다.
+
+```python
+>>>class Dog:
+    name=''
+    def introduce(self):
+        print('내 이름은 %s'%self.name)
+    def bark(self):
+        print('왈왈')
+        
+
+>>>dog1=Dog()
+>>>dog1.name='멍멍이'
+>>>dog2=Dog()
+>>>dog2.name='왈왈이'
+
+>>>dog1.introduce()
+내 이름은 멍멍이
+
+>>>dog2.introduce()
+내 이름은 왈왈이
+```
