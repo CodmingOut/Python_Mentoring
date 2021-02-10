@@ -326,7 +326,7 @@ person_list = []
 def register(name, age, gender = '기타', description = '없음', **features):
     person_dict = {}
     person_dict['name'] = name
-    if age is not int:
+    if type(age) != type(0):
         person_dict['age'] = int(age)
     else:
         person_dict['age'] = age
