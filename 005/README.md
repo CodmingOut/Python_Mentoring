@@ -354,6 +354,50 @@ for person in person_list:
 
 <br>
 
+## 5.16. 재귀함수 
+
+漢: 再歸函數 / En: Recursive function
+하나의 함수에서 자신을 다시 호출하여 작업을 수행하는 방식으로 주어진 문제를 푸는 방법이다. 재귀 호출이나 되부름 이라고 불리기도 한다.
+
+<br>
+
+## 5.17. 재귀함수(팩토리얼)
+```python
+def factorial(x):
+if x==0:
+return 1 #0! 은 1 이므로
+else:
+return x*factorial(x-1) #x! 은 x*(x-1)! 으로 정의할 수 있습니다.
+print(factorial(5)) #120 print(factorial(3)) #6
+```
+
+<br>
+
+## 5.18. 재귀함수(피보나치)
+피보나치 수열(1 1 2 3 5 8 ....)을 첫번째 수부터 fibo(1) fibo(2) fibo(3) ... fibo(n)이라 정의합니다.   
+n 이 주어졌을때 fibo(n)을 구하는 재귀함수는 다음과 같습니다.   
+```python
+def fibo(n):
+if n==1 or n==2:
+  
+# fibo(1)과 fibo(2)는 각각 1 이므로   
+
+return 1 else:
+return fibo(n-1)+fibo(n-2) 
+```   
+fibo(n)=fibo(n-1)+fibo(n-2)로 정의되므로   
+피보나치 수열은 fibo(n)+fibo(n+1)=fibo(n+2) 으로 정의됩니다. (단 n>=1)   
+이때 n 에 n-2 를 대입해보면 fibo(n-2)+fibo(n-1)=fibo(n) 이라는 새로운 식을 얻을수 있습니다. (n>=3)   
+위 식은 n>=3 일때만 성립하기에 n 이 1 과 2 일때는 미리 값을 1 로 정의해두어 재귀식을 끝낼수 있게 하는 것입니다.
+```python
+print(fibo(4))
+>>> 3
+print(fibo(6))
+>>> 8
+```  
+
+<br>
+
 ## References
 
 http://tcpschool.com/python2018/python_function_function
