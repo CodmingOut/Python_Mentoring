@@ -1,13 +1,18 @@
 # Python_Mentoring
 
-스터디 코밍아웃에서 파이썬 멘토링을 위한 자료를 담은 리포지토리입니다.
+스터디 코밍아웃에서 파이썬 멘토링을 위한 자료를 담은 리포지토리입니다.   
+   
+들어가기에 앞서 index와 순서번호는 같은 말로 이해해주길 바라며, 파라미터와 인수와 같은 말로 인식해주십시오.   
+  
+본 레포지토리는 교육자료로 자유롭게 사용 가능합니다.
 
-## Author
-
+## Main Author   
 [황선우](https://github.com/SionHwang)   
-[김현우](https://github.com/Coalery)   
-[이현서](https://github.com/hslee1024)   
-[김서윤](https://github.com/M0ONLIT)   
+[김현우](https://github.com/Coalery)    
+[김서윤](https://github.com/M0ONLIT)
+
+## Assit
+[이현서](https://github.com/hslee1024) 
 [이준원](https://github.com/cpprhtn)   
 [박경원](https://github.com/watershot)
 
