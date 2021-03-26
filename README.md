@@ -6,15 +6,15 @@
   
 본 레포지토리는 교육자료로 자유롭게 사용 가능합니다.
 
-## Main Author   
+### Main Author   
 [황선우](https://github.com/SionHwang)   
-[김현우](https://github.com/Coalery)    
-[김서윤](https://github.com/M0ONLIT)
+[김현우](https://github.com/Coalery)   
+[김서윤](https://github.com/M0ONLIT)   
 
-## Assit
-[이현서](https://github.com/hslee1024) 
+### Assit   
+[이현서](https://github.com/hslee1024)   
 [이준원](https://github.com/cpprhtn)   
-[박경원](https://github.com/watershot)
+[박경원](https://github.com/watershot)   
 
 ## Index
 
