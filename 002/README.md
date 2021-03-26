@@ -6,10 +6,10 @@
 - 일반적으로 프로그램이 하는 일을 설명하고 가독성을 높이기 위해 사용
 - 프로그램의 실행 결과에 영향을 끼치지 않음
 - 한 줄 주석 처리할 때 : #
-- 여러 줄을 주석 처리할 때 : ''' put comment here ''' 혹은 """ put comment here """
+- 여러 줄을 주석 처리할 때 : ''' comment ''' 혹은 """ comment """
 
-    >   ''' put comment here ''' 혹은 """ put comment here """   
-     이 방식은 실제론 주석 처리가 아닌 put comment here 부분을 텍스트로 만드는 것이다.
+    >   ''' comment ''' 혹은 """ comment """   
+     이 방식은 실제론 주석 처리가 아닌 comment 부분을 텍스트로 만드는 것이다.
     -> 텍스트는 명령 코드가 아니기에 실행중에 영향미치지 않음.
 
 
@@ -197,6 +197,8 @@ python 으로 산술 예제 :
  - 큰 따옴표로 시작해서 작은 따옴표로 끝내면 문법적 오류   
  - 따옴표가 문자열 내에서 사용될 경우를 대비하여 큰/작은 따옴표 둘다 지원      
 
+<br>
+
  Example:   
  ~~~python
 >>> print('hello my name is "python"')
@@ -207,7 +209,10 @@ hello my name is "python"
  i want printing ('hello my name is "python"')
 >>>
  ~~~
- #### 문자열의 연산
+
+<br>
+
+#### 문자열의 연산
 ~~~python
 >>> a='hello'
 >>> a+' world!'
@@ -288,12 +293,14 @@ False
 True
 ~~~
 
+파이썬:
 |논리 연산자|결과|
 |:---|:---|
 |x or y|x 또는 y|
 |x and y|x 그리고 y|
 |not x|x가 아닌|
 
+다른 언어:
 |논리 연산자|기호|예시|
 |:---|:---|:---|
 |or| &#124; | x &#124; y |
