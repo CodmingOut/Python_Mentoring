@@ -11,7 +11,7 @@
 [김현우](https://github.com/Coalery)   
 [김서윤](https://github.com/M0ONLIT)   
 
-### Assit   
+### Assist
 [이현서](https://github.com/hslee1024)   
 [이준원](https://github.com/cpprhtn)   
 [박경원](https://github.com/watershot)   
